@@ -1,0 +1,41 @@
+/*2 import fonts from fonts.google*/
+@import url('https://fonts.googleapis.com/css?family=K2D:300,400,500|Roboto+Mono:300,400,500|Roboto:300,400,500');
+
+/*1 target all elements within the page,
+ note the texts are now always display inside the web browser screen*/
+* {
+    box-sizing: border-box;
+}
+/*3 declare font, pick a few, so incase first one doesn't work, the second one will be used*/
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+/*4 declare wrapper for the first div element first*/
+.wrapper {
+    padding: 20px 40px;
+}
+/*5 I want all header 2 to have bigger font and same font size*/
+.header-two {
+    font-size: 25px;
+}
+/*6 now tackle the img*/
+img {
+    width: 100%;
+}
+/*7media query for creating 3 columns once the screen size is 921px or more, 
+which will be defined later in 7.3 */
+@media (min-width: 921px) {
+    
+    /*7.1 give demo on how it works of blog-column and its parent a class of "friends"*/
+    body {
+        background-color: yellow;
+    }
+    /*7.2 give the div a class called "friends", and col "friends-col"
+    with width 33.3% as divided by 3
+    make them in one row when less than 921px, float: left*/
+    .friends > .friends-col{
+        width: 33.3333%;
+        float: left;
+    }
+
+}
